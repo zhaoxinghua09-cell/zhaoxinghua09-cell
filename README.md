@@ -2,6 +2,27 @@
 
 > Profile README · 全景入口与权属宣告 · Public site: <https://medxpert.cn>
 
+## Fixed vocabulary · 固定词汇表
+
+Four names, four layers — used consistently across all repositories:
+
+| Term | Layer | What it is |
+|---|---|---|
+| **XLGD** | Umbrella · 伞 | The umbrella mark of the governance line. **X is a distinction mark** used for attribution; it covers the theory and protocol layers below. |
+| **LGD** | Theory · 理论 | *Lifecycle Governance Doctrine* — 凡自治之物：**有籍（registered）· 有证（evidenced）· 有门禁（gated）**，由生到退全程可溯、可证、可问责。 |
+| **UIBC** | Protocol · 协议 | The **executable** protocol: registry / evidence / gates, with a reference implementation and a benchmark. |
+| **MedXpert** | Applications · 应用 | The medical-device compliance product line — **parallel to, not inside, the XLGD umbrella**. |
+
+All four are project identifiers only — **no entity or trademark registration filed**.
+
+## The stack · 三层结构
+
+| Layer | Repos | One line |
+|---|---|---|
+| **Theory** | [lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory) · [xlgd](https://github.com/zhaoxinghua09-cell/xlgd) · [xcgs-manifesto](https://github.com/zhaoxinghua09-cell/xcgs-manifesto) | Machine-checkable lifecycle-governance doctrine (registry · evidence · gates). |
+| **Protocol** | [uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core) · [uibc-competition](https://github.com/zhaoxinghua09-cell/uibc-competition) · [silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog) · [assayance](https://github.com/zhaoxinghua09-cell/assayance) | Executable evidence/registry/validator core, the UIBC-MEM benchmark, and the verifier-side silent-failure challenge reference. |
+| **Applications** | [medxpert-reg-kb](https://github.com/zhaoxinghua09-cell/medxpert-reg-kb) · [medxpert-reg-connector](https://github.com/zhaoxinghua09-cell/medxpert-reg-connector) · [medxpert-skills](https://github.com/zhaoxinghua09-cell/medxpert-skills) · [agent-skills](https://github.com/zhaoxinghua09-cell/agent-skills) · [agent-memory-service](https://github.com/zhaoxinghua09-cell/agent-memory-service) · [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) | Product integrations: medical-device compliance tooling, agent skill packs, memory service, unified entry hub. |
+
 ## What I build — and why it matches ITU FG-TIDA
 
 I engineer **machine-checkable** AI-governance primitives. The work most relevant to **ITU FG-TIDA** (themes **#6** *Verifier-side requirements and failure semantics* and **#7**) is:
@@ -56,4 +77,17 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 - **[uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core)** —— 自治系统全生命周期治理的证据/注册/验证内核（Apache-2.0）。
 - **[lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory)** —— 全程治理论（注册·证据·门禁）。
 
-**权利宣告**：本账号全部内容保留所有权利；代码依各仓许可证（MIT/Apache-2.0/AGPL-3.0）使用。署名引用须标注权利人「赵兴华 / Steven Zhao·China」。MedXpert、SynomosAI、LGD、UIBC 等仅为项目标识，**均未申请实体/商标注册**。
+### 固定词汇表
+
+| 术语 | 层 | 含义 |
+|---|---|---|
+| **XLGD** | 伞 | 治理线伞层标识；X 是区别符，用于标明来源 |
+| **LGD** | 理论 | 全程治理论：凡自治之物，有籍·有证·有门禁 |
+| **UIBC** | 协议 | 可执行协议：registry / evidence / gates 参考实现 + 基准 |
+| **MedXpert** | 应用 | 医疗器械合规产品线——**与 XLGD 伞并行，不在伞内** |
+
+### 三层结构
+
+**理论层**（lgd-theory · xlgd · xcgs-manifesto）→ **协议层**（uibc-core · uibc-competition · silent-failure-catalog · assayance）→ **应用层**（medxpert 系列 · agent-skills · agent-memory-service · lgd-hub）。
+
+**权利宣告**：本账号全部内容保留所有权利；代码依各仓许可证（MIT/Apache-2.0/AGPL-3.0）使用。署名引用须标注权利人「赵兴华 / Steven Zhao·China」。MedXpert、SynomosAI、LGD、UIBC、XLGD 等仅为项目标识，**均未申请实体/商标注册**。
