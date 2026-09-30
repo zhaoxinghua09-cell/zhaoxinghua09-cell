@@ -1,58 +1,59 @@
-# zhaoxinghua09-cell
+# Steven Zhao · China — AI Governance Engineering
 
-> 本页为 GitHub 主页（profile README），是全部仓库的**唯一全景入口**。
-> 官网落地页：<https://medxpert.cn>
+> Profile README · 全景入口与权属宣告 · Public site: <https://medxpert.cn>
 
----
+## What I build — and why it matches ITU FG-TIDA
 
-## 权属宣告 · Rights Notice
+I engineer **machine-checkable** AI-governance primitives. The work most relevant to **ITU FG-TIDA** (themes **#6** *Verifier-side requirements and failure semantics* and **#7**) is:
 
-本账号及其全部仓库内容**保留所有权利（All Rights Reserved）**——
-含文本、方法论表述、理论术语、规范条目、知识库条目、目录清单、示例代码与配套脚本。
-除署名引用（见下）外，未经书面许可，不得复制、改编、再分发、公开传播或用于衍生作品。
+- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** — a named catalog of **14 silent-failure modes** (validation that passes while nothing is checked), each with a runnable reproduction, a fix, and a **negative control**. Submitted to FG-TIDA as a verifier-side challenge reference (**PR [#23](https://github.com/FG-TIDA/use-cases/pull/23)** in `FG-TIDA/use-cases`); cited in themes #6/#7.
+- **[uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core)** — evidence / registry / validator core for autonomous-system lifecycle governance (Apache-2.0).
+- **[lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory)** — the Lifecycle Governance Doctrine (registry · evidence · gates).
 
-**允许的最小用法**：在注明出处的前提下引用与学术、公共讨论。引用时应同时标注
-「仓库名 + 原文链接 + 权利人」。引用不得删改原文表述，
-亦不得使读者误认为权利人已作出背书。
+### How the pieces connect / 流转关系
 
-**完整条款**以各仓库根目录 `LICENSE` 与 `NOTICE.md` 为准。
+```mermaid
+graph LR
+  A[silent-failure-catalog<br/>verifier-side challenge ref] -->|negative controls| B[FG-TIDA #6 / #7<br/>verifier-side failure semantics]
+  C[uibc-core<br/>evidence + registry] --> D[LGD lifecycle governance]
+  A -->|C7 checks-in-path| E[AVS 0.3 candidates]
+  B --> E
+```
 
-## 品牌状态限定（重要）
+## Repositories by track / 按主线
 
-`MedXpert`、`SynomosAI`、`LGD`、`Nomos`、`XLGD`、`UIBC` 等为本项目或相关项目标识，
-**均未申请实体注册、未申请商标注册**；其出现仅作来源标识，
-不构成对任何法人实体的设立声明，亦不构成对商标权的任何主张、默许或放弃。
+| Track | Representative repos |
+|---|---|
+| LGD doctrine | `lgd-theory`, `lgd-hub`, `xlgd`, `xcgs-manifesto` |
+| UIBC autonomous things | `uibc-core`, `uibc-competition` |
+| Verifier-side / silent failure | `silent-failure-catalog`, `assayance` |
+| MedXpert medical-device compliance | `medxpert-reg-kb`, `medxpert-reg-connector`, `medxpert-skills` |
+| Agents & memory | `agent-skills`, `agent-memory-service` |
 
-## 内容主线导航
+## Rights notice · 权利宣告
 
-| 主线 | 代表仓库 | 说明 |
-|---|---|---|
-| **LGD 全程治理论** | [`lgd-theory`](lgd-theory) · [`lgd-hub`](lgd-hub) | 理论主线文本与对外门户 |
-| **LGD 术语与构件** | [`assurability`](assurability) · [`culpachain`](culpachain) · [`mnemoship`](mnemoship) · [`runtigil`](runtigil) · [`terminance`](terminance) | 可承保性 / 问责链 / 记忆可达 / 运行时看守 / 退役治理 |
-| **XLGD 宣言** | [`xcgs-manifesto`](xcgs-manifesto) · [`xlgd`](xlgd) | 宣言与扩展线 |
-| **UIBC 自治之物** | [`uibc-core`](uibc-core) · [`uibc-competition`](uibc-competition) | 代码内核（Apache-2.0）与赛事 |
-| **Nomos 治理线** | [`nomos-ai`](nomos-ai) · [`Nomos`](Nomos) | 治理原则转操作工具 |
-| **MedXpert 医械合规** | [`medxpert-reg-kb`](medxpert-reg-kb) · [`medxpert-reg-connector`](medxpert-reg-connector) · [`medxpert-skills`](medxpert-skills) | 注册实务知识库、连接器与技能包 |
-| **方法论与判据** | [`project-ops-protocol`](project-ops-protocol) · [`silent-failure-catalog`](silent-failure-catalog) · [`assayance`](assayance) | 操作协议、失效清单、核验判据 |
-| **技能与记忆** | [`agent-skills`](agent-skills) · [`agent-memory-service`](agent-memory-service) | 技能包与长期记忆服务 |
+All account content is **All Rights Reserved** (text, methodology, theory terms, specs, examples, scripts). Code is released under MIT / Apache-2.0 / AGPL-3.0 per repo. Attribution-only citation is permitted with named source + link + rights holder *Zhao Xinghua / Steven Zhao·China*.
 
-> 上表按主线索引，非穷举；完整清单见仓库列表页。
+**Brand status:** MedXpert, SynomosAI, LGD, UIBC, Nomos, XLGD are project identifiers only — **no entity or trademark registration filed**. Their appearance is source identification, not a claim of legal-entity or trademark rights.
 
-## 许可一览
+## Contact · 联系
 
-各仓以自身 `LICENSE` 为准，共两类：
-
-- **自定义「保留所有权利 + 署名引用」**（理论 / 方法论 / 知识库 / 宣言类）——权利最严，引用须署名；平台显示 `Other`（NOASSERTION）。
-- **MIT / Apache-2.0 / AGPL-3.0**（代码类）——可依该许可证自由使用。
-
-每个仓库的 README 顶部均设有「许可说明 · License Notice」区块，注明该仓适用的许可。
-
-## 联系
-
-- 邮箱：zhaoxinghua06@126.com
-- ORCID：0009-0001-0512-1237
-- 官网：https://medxpert.cn
+- Email: zhaoxinghua09@gmail.com
+- ORCID: 0009-0001-0512-1237
+- Site: <https://medxpert.cn>
 
 ---
 
-*本页由账号权利人维护。内容基于公开信息整理，不构成法规意见或注册代理服务。*
+*Maintained by the rights holder. Public information only; not legal, regulatory, or registration advice.*
+
+---
+
+# 中文说明
+
+本账号聚焦于**可机器核验的 AI 治理构件**。与 **ITU FG-TIDA**（主题 **#6** 验证方失败语义、**#7**）最直接相关的工作：
+
+- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** —— 14 种"静默失败"模式的命名目录，每条含可运行复现、修法、反向对照。已作为验证方挑战参考实现提交（`FG-TIDA/use-cases` **PR [#23](https://github.com/FG-TIDA/use-cases/pull/23)**），并在 #6/#7 被引用。
+- **[uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core)** —— 自治系统全生命周期治理的证据/注册/验证内核（Apache-2.0）。
+- **[lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory)** —— 全程治理论（注册·证据·门禁）。
+
+**权利宣告**：本账号全部内容保留所有权利；代码依各仓许可证（MIT/Apache-2.0/AGPL-3.0）使用。署名引用须标注权利人「赵兴华 / Steven Zhao·China」。MedXpert、SynomosAI、LGD、UIBC 等仅为项目标识，**均未申请实体/商标注册**。
