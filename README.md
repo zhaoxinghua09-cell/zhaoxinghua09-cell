@@ -1,21 +1,28 @@
 # Steven Zhao · China
 
-> Profile README · 全景入口与权属宣告 · Public site: <https://medxpert.cn>
+> Independent expert building **machine-checkable, verifier-side primitives** — validation that **fails visibly** instead of passing silently.
 
-## Fixed vocabulary · 固定词汇表
+![ITU-T FG-TIDA](https://img.shields.io/badge/ITU--T%20FG--TIDA-contributor-0033A0)
+![ORCID](https://img.shields.io/badge/ORCID-0009--0001--0512--1237-A6CE39?logo=orcid&logoColor=white)
+![Zenodo](https://img.shields.io/badge/Zenodo-archived_releases-1331AB?logo=zenodo&logoColor=white)
+![Site](https://img.shields.io/badge/site-medxpert.cn-000000?logo=googlechrome&logoColor=white)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-steven--zhao--9156a197-0A66C2?logo=linkedin&logoColor=white)
+![X](https://img.shields.io/badge/X-%40zhaoxing32035-000000?logo=x&logoColor=white)
 
-Four names, four layers — used consistently across all repositories:
+![Profile views](https://komarev.com/ghpvc/?username=zhaoxinghua09-cell&color=0033A0)
 
-| Term | Layer | What it is |
-|---|---|---|
-| **XLGD** | Umbrella · 伞 | The umbrella identifier for the theory-and-protocol line. **X is a distinction mark** used for attribution; it covers the theory and protocol layers below. |
-| **LGD** | Theory · 理论 | 凡自治之物：**有籍（registered）· 有证（evidenced）· 有门禁（gated）**，由生到退全程可溯、可证、可问责。 |
-| **UIBC** | Protocol · 协议 | The **executable** protocol: registry / evidence / gates, with a reference implementation and a benchmark. |
-| **MedXpert** | Applications · 应用 | The medical-device compliance product line — **parallel to, not inside, the XLGD umbrella**. |
+**Why follow:** everything here is **falsifiable by construction** — every claim ships with a runnable reproduction and a negative control, so you can prove me wrong before you trust me. If you care about verifier-side failure semantics, agent governance, or how evidence survives context handoffs, this is the workshop.
 
-All four are project identifiers only — **no entity or trademark registration filed**.
+## 🏛 Standards work · ITU-T Focus Group on TIDA
 
-## The stack · 三层结构
+Work submitted to **[ITU-T FG-TIDA](https://www.itu.int/en/ITU-T/focusgroups/tida/Pages/Default.aspx)** (Trustworthy Identification for Autonomous Agents), written in an independent-expert capacity:
+
+- **[`silent-failure-catalog`](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** → submitted as a verifier-side challenge reference in [`FG-TIDA/use-cases` PR #23](https://github.com/FG-TIDA/use-cases/pull/23): a named catalog of **14 silent-failure modes** — validation that passes while nothing is checked — each with a runnable reproduction, a fix, and a negative control. Zenodo-archived ([concept record 23051637](https://zenodo.org/records/23051637), resolves to the latest version); canonical release tag per the repo's citation note.
+- **[Theme #7 — verifier-side requirements and failure semantics](https://github.com/FG-TIDA/themes/issues/7)**: discussion contributions on what a relying party may verify offline, and how verdicts stay re-verifiable without making every party a verifier. The catalog is also referenced in [theme #6](https://github.com/FG-TIDA/themes/issues/6) (intent-based security policies).
+- **[`FG-TIDA/wg1-ra-aai` PR #2](https://github.com/FG-TIDA/wg1-ra-aai/pull/2)** — reference-architecture chapter 4: *offline re-verifiability* of agent attestation results, aligned with RFC 9334 (RATS) role separation.
+- Merged: [`FG-TIDA/use-cases` PR #18](https://github.com/FG-TIDA/use-cases/pull/18) — completing the submissions index.
+
+## 🧱 The stack · three layers, one idea
 
 | Layer | Repos | One line |
 |---|---|---|
@@ -23,47 +30,40 @@ All four are project identifiers only — **no entity or trademark registration 
 | **Protocol** | [uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core) · [uibc-competition](https://github.com/zhaoxinghua09-cell/uibc-competition) · [silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog) · [assayance](https://github.com/zhaoxinghua09-cell/assayance) | Executable evidence/registry/validator core, the UIBC-MEM benchmark, and the verifier-side silent-failure challenge reference. |
 | **Applications** | [medxpert-reg-kb](https://github.com/zhaoxinghua09-cell/medxpert-reg-kb) · [medxpert-reg-connector](https://github.com/zhaoxinghua09-cell/medxpert-reg-connector) · [medxpert-skills](https://github.com/zhaoxinghua09-cell/medxpert-skills) · [agent-skills](https://github.com/zhaoxinghua09-cell/agent-skills) · [agent-memory-service](https://github.com/zhaoxinghua09-cell/agent-memory-service) · [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) | Product integrations: medical-device compliance tooling, agent skill packs, memory service, unified entry hub. |
 
-## What I build
-
-I build **machine-checkable** verifier-side primitives — validation that fails visibly instead of passing silently. Work submitted to **ITU FG-TIDA** (themes **#6** *Verifier-side requirements and failure semantics* and **#7**) includes:
-
-- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** — a named catalog of **14 silent-failure modes** (validation that passes while nothing is checked), each with a runnable reproduction, a fix, and a **negative control**. Submitted to FG-TIDA as a verifier-side challenge reference (**PR [#23](https://github.com/FG-TIDA/use-cases/pull/23)** in `FG-TIDA/use-cases`); cited in themes #6/#7.
-- **[uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core)** — evidence / registry / validator core for bounded-lifecycle systems (Apache-2.0).
-- **[lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory)** — a machine-checkable lifecycle model (registry · evidence · gates).
-
-### How the pieces connect / 流转关系
+Four names, four layers — used consistently: **XLGD** (umbrella · X is a distinction mark), **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella). All four are project identifiers only — **no entity or trademark registration filed**.
 
 ```mermaid
 graph LR
   A[silent-failure-catalog<br/>verifier-side challenge ref] -->|negative controls| B[FG-TIDA #6 / #7<br/>verifier-side failure semantics]
   C[uibc-core<br/>evidence + registry] --> D[LGD lifecycle model]
   A -->|C7 checks-in-path| E[AVS 0.3 candidates]
-  B --> E
 ```
 
-## Repositories by track / 按主线
+## 📌 Pinned starting points
 
-| Track | Representative repos |
-|---|---|
-| LGD theory | `lgd-theory`, `lgd-hub`, `xlgd`, `xcgs-manifesto` |
-| UIBC autonomous things | `uibc-core`, `uibc-competition` |
-| Verifier-side / silent failure | `silent-failure-catalog`, `assayance` |
-| MedXpert medical-device compliance | `medxpert-reg-kb`, `medxpert-reg-connector`, `medxpert-skills` |
-| Agents & memory | `agent-skills`, `agent-memory-service` |
+- 🔍 **New to the idea?** Start with [silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog) — read one mode, run its repro, kill it with the fix.
+- 🛠 **Building agent systems?** [uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core) gives you registry / evidence / gates you can wire into your own lifecycle (Apache-2.0).
+- 🏛 **Tracking FG-TIDA?** Watch this account — FG-TIDA submissions and follow-ups land here first.
+- 🌐 **Prefer plain language?** [medxpert.cn](https://medxpert.cn) — the medical-device compliance line, in prose.
 
-## Rights notice · 权利宣告
+## 🤝 Get involved
 
-All account content is **All Rights Reserved** (text, methodology, theory terms, specs, examples, scripts). Code is released under MIT / Apache-2.0 / AGPL-3.0 per repo. Attribution-only citation is permitted with named source + link + rights holder *Zhao Xinghua / Steven Zhao·China*.
+- ⭐ Star or 👀 watch a repo if a mode / primitive saves you a bug — it tells me what to deepen next.
+- 🐛 Found a claim that doesn't reproduce? That is the *best* issue to open. Negative controls are the house style.
+- 💬 Ask me about verifier-side validation, agent evidence, or medical-device compliance tooling.
+- ➕ **Follow** for standards-track work (ITU-T FG-TIDA), new silent-failure modes, and machine-checkable governance primitives.
 
-**Brand status:** MedXpert, SynomosAI, LGD, UIBC, Nomos, XLGD are project identifiers only — **no entity or trademark registration filed**. Their appearance is source identification, not a claim of legal-entity or trademark rights.
-
-## Contact · 联系
+## 📮 Contact
 
 - Email: zhaoxinghua09@gmail.com
 - ORCID: 0009-0001-0512-1237
 - Site: <https://medxpert.cn>
 - LinkedIn: <https://www.linkedin.com/in/steven-zhao-9156a197>
 - X (Twitter): [@zhaoxing32035](https://x.com/zhaoxing32035)
+
+All account content is **All Rights Reserved** (text, methodology, theory terms, specs, examples, scripts). Code is released under MIT / Apache-2.0 / AGPL-3.0 per repo. Attribution-only citation is permitted with named source + link + rights holder *Zhao Xinghua / Steven Zhao·China*.
+
+**Brand status:** MedXpert, SynomosAI, LGD, UIBC, Nomos, XLGD are project identifiers only — **no entity or trademark registration filed**. Their appearance is source identification, not a claim of legal-entity or trademark rights.
 
 ---
 
@@ -73,13 +73,19 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 
 # 中文说明
 
-本账号聚焦于**可机器核验的验证方构件**——让校验在失效时可见，而不是静默通过。已提交 **ITU FG-TIDA**（主题 **#6** 验证方失败语义、**#7**）的工作包括：
+本账号聚焦于**可机器核验的验证方构件**——让校验在失效时可见，而不是静默通过。核心理念：**每一句声称都自带可运行复现与反向对照，先证伪、后采信**。
 
-- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** —— 14 种"静默失败"模式的命名目录，每条含可运行复现、修法、反向对照。已作为验证方挑战参考实现提交（`FG-TIDA/use-cases` **PR [#23](https://github.com/FG-TIDA/use-cases/pull/23)**），并在 #6/#7 被引用。
-- **[uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core)** —— 有界生命周期系统的证据/注册/验证内核（Apache-2.0）。
-- **[lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory)** —— 机器可核验的全生命周期模型（注册·证据·门禁）。
+### 标准化工作 · ITU-T FG-TIDA
 
-### 固定词汇表
+以独立专家身份向 **[ITU-T FG-TIDA（可自治智能体可信识别焦点组）](https://www.itu.int/en/ITU-T/focusgroups/tida/Pages/Default.aspx)** 提交的工作：
+
+- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** —— 14 种"静默失败"模式的命名目录，每条含可运行复现、修法、反向对照。已作为验证方挑战参考实现提交（`FG-TIDA/use-cases` **[PR #23](https://github.com/FG-TIDA/use-cases/pull/23)**）；Zenodo 归档（概念记录 [23051637](https://zenodo.org/records/23051637)，解析到最新版本），规范引用 tag 以仓内引用注记为准。
+- **[主题 #7 验证方失败语义](https://github.com/FG-TIDA/themes/issues/7)** 的讨论贡献（依赖方可离线核验什么、判决如何保持可复验而不把每个人都变成验证者）；catalog 亦被 [主题 #6](https://github.com/FG-TIDA/themes/issues/6)（意图安全策略）引用；**[`wg1-ra-aai` PR #2](https://github.com/FG-TIDA/wg1-ra-aai/pull/2)** 参考架构第 4 章：离线可复验性（对齐 RFC 9334 角色分离）。
+- 已合并：[`use-cases` PR #18](https://github.com/FG-TIDA/use-cases/pull/18)（补全投稿索引）。
+
+### 三层结构
+
+**理论层**（lgd-theory · xlgd · xcgs-manifesto）→ **协议层**（uibc-core · uibc-competition · silent-failure-catalog · assayance）→ **应用层**（medxpert 系列 · agent-skills · agent-memory-service · lgd-hub）。
 
 | 术语 | 层 | 含义 |
 |---|---|---|
@@ -88,9 +94,11 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 | **UIBC** | 协议 | 可执行协议：registry / evidence / gates 参考实现 + 基准 |
 | **MedXpert** | 应用 | 医疗器械合规产品线——**与 XLGD 伞并行，不在伞内** |
 
-### 三层结构
+### 参与方式
 
-**理论层**（lgd-theory · xlgd · xcgs-manifesto）→ **协议层**（uibc-core · uibc-competition · silent-failure-catalog · assayance）→ **应用层**（medxpert 系列 · agent-skills · agent-memory-service · lgd-hub）。
+- 觉得某个模式帮你避了坑 → 给仓点 ⭐/👀，这决定我深挖哪条线。
+- 发现哪句声称复现不了 → **开 issue，这是本仓最欢迎的贡献**（反向对照是本仓家风）。
+- ➕ **关注本账号**：ITU-T FG-TIDA 标准线动态、新增静默失败模式、可机器核验的治理构件都会先落在这里。
 
 ### 联系
 
