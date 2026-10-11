@@ -62,6 +62,8 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 - Email: zhaoxinghua09@gmail.com
 - ORCID: 0009-0001-0512-1237
 - Site: <https://medxpert.cn>
+- LinkedIn: <https://www.linkedin.com/in/steven-zhao-9156a197>
+- X (Twitter): [@zhaoxing32035](https://x.com/zhaoxing32035)
 
 ---
 
@@ -89,5 +91,10 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 ### 三层结构
 
 **理论层**（lgd-theory · xlgd · xcgs-manifesto）→ **协议层**（uibc-core · uibc-competition · silent-failure-catalog · assayance）→ **应用层**（medxpert 系列 · agent-skills · agent-memory-service · lgd-hub）。
+
+### 联系
+
+- 邮箱：zhaoxinghua09@gmail.com ｜ ORCID：0009-0001-0512-1237 ｜ 官网：<https://medxpert.cn>
+- LinkedIn：<https://www.linkedin.com/in/steven-zhao-9156a197> ｜ X：[@zhaoxing32035](https://x.com/zhaoxing32035)
 
 **权利宣告**：本账号全部内容保留所有权利；代码依各仓许可证（MIT/Apache-2.0/AGPL-3.0）使用。署名引用须标注权利人「赵兴华 / Steven Zhao·China」。MedXpert、SynomosAI、LGD、UIBC、XLGD 等仅为项目标识，**均未申请实体/商标注册**。
