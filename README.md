@@ -46,6 +46,18 @@ graph LR
 - 🏛 **Tracking FG-TIDA?** Watch this account — FG-TIDA submissions and follow-ups land here first.
 - 🌐 **Prefer plain language?** [medxpert.cn](https://medxpert.cn) — the medical-device compliance line, in prose.
 
+## 🔗 Three accounts, one pipeline
+
+This account is one of three that together form the full loop — theory, tooling, evidence:
+
+| Account | Role | One line |
+|---|---|---|
+| **[@zhaoxinghua09-cell](https://github.com/zhaoxinghua09-cell)** (this account) | Theory & standards — SSOT | *What is right:* lifecycle model, protocols, skill registry, governance specs. |
+| **[@stevenzhao07](https://github.com/stevenzhao07)** | Product & tooling | *How to use it:* MedXpert toolchain and agent skill packs. |
+| **[@LGD-Eval](https://github.com/LGD-Eval)** | Independent evaluation | *How to prove it:* neutral verifier — Evaluated / Audited / Verified, with re-runnable evidence. |
+
+Evaluation is run by a separate account with read-only separation from the theory and product accounts, so claims are assessed by an independent party — the physical basis of verifiable independence.
+
 ## 🤝 Get involved
 
 - ⭐ Star or 👀 watch a repo if a mode / primitive saves you a bug — it tells me what to deepen next.
@@ -93,6 +105,16 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 | **LGD** | 理论 | 全生命周期模型：凡自治之物，有籍·有证·有门禁 |
 | **UIBC** | 协议 | 可执行协议：registry / evidence / gates 参考实现 + 基准 |
 | **MedXpert** | 应用 | 医疗器械合规产品线——**与 XLGD 伞并行，不在伞内** |
+
+### 三角互链 · 三号分工
+
+| 账号 | 角色 | 一句话 |
+|---|---|---|
+| **[@zhaoxinghua09-cell](https://github.com/zhaoxinghua09-cell)**（本账号） | 理论 & 标准（SSOT） | 什么对：全生命周期模型、协议、技能注册表、治理规范 |
+| **[@stevenzhao07](https://github.com/stevenzhao07)** | 产品 & 工具 | 怎么用：MedXpert 工具链与 agent 技能包 |
+| **[@LGD-Eval](https://github.com/LGD-Eval)** | 独立评测 | 怎么证明：中立验证方——Evaluated / Audited / Verified，证据可复跑 |
+
+评测由独立账号承载，与理论号/产品号保持只读隔离——"被评的结论不由被评方自证"，即可验证独立性的物理基础。
 
 ### 参与方式
 
