@@ -30,7 +30,7 @@ Work submitted to **[ITU-T FG-TIDA](https://www.itu.int/en/ITU-T/focusgroups/tid
 | **Protocol** | [uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core) · [uibc-competition](https://github.com/zhaoxinghua09-cell/uibc-competition) · [silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog) · [assayance](https://github.com/zhaoxinghua09-cell/assayance) | Executable evidence/registry/validator core, the UIBC-MEM benchmark, and the verifier-side silent-failure challenge reference. |
 | **Applications** | [medxpert-reg-kb](https://github.com/zhaoxinghua09-cell/medxpert-reg-kb) · [medxpert-reg-connector](https://github.com/zhaoxinghua09-cell/medxpert-reg-connector) · [medxpert-skills](https://github.com/zhaoxinghua09-cell/medxpert-skills) · [agent-skills](https://github.com/zhaoxinghua09-cell/agent-skills) · [agent-memory-service](https://github.com/zhaoxinghua09-cell/agent-memory-service) · [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) | Product integrations: medical-device compliance tooling, agent skill packs, memory service, unified entry hub. |
 
-Four names, four layers — used consistently: **XLGD** (umbrella · X is a distinction mark), **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella). All four are project identifiers only — **no entity or trademark registration filed**.
+One umbrella, four layers — used consistently: **LGD Collaborative Governance Framework** (umbrella name; **XLGD** remains the X-distinction mark for LGD), **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella). All names are project identifiers only — **no entity or trademark registration filed**.
 
 ```mermaid
 graph LR
@@ -101,7 +101,7 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 
 | 术语 | 层 | 含义 |
 |---|---|---|
-| **XLGD** | 伞 | 理论与协议线伞层标识；X 是区别符，用于标明来源 |
+| **LGD 协同治理体系（伞名）** | 伞 | 对外总称：LGD Collaborative Governance Framework；XLGD 为 LGD 的区别符标识，标明来源 |
 | **LGD** | 理论 | 全生命周期模型：凡自治之物，有籍·有证·有门禁 |
 | **UIBC** | 协议 | 可执行协议：registry / evidence / gates 参考实现 + 基准 |
 | **MedXpert** | 应用 | 医疗器械合规产品线——**与 XLGD 伞并行，不在伞内** |
