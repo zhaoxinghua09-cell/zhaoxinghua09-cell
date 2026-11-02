@@ -1,4 +1,4 @@
-# Steven Zhao · China
+# Steven Zhao · Independent Researcher
 
 > Independent expert building **machine-checkable, verifier-side primitives** — validation that **fails visibly** instead of passing silently.
 
@@ -30,7 +30,10 @@ Work submitted to **[ITU-T FG-TIDA](https://www.itu.int/en/ITU-T/focusgroups/tid
 | **Protocol** | [uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core) · [uibc-competition](https://github.com/zhaoxinghua09-cell/uibc-competition) · [silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog) · [assayance](https://github.com/zhaoxinghua09-cell/assayance) | Executable evidence/registry/validator core, the UIBC-MEM benchmark, and the verifier-side silent-failure challenge reference. |
 | **Applications** | [medxpert-reg-kb](https://github.com/zhaoxinghua09-cell/medxpert-reg-kb) · [medxpert-reg-connector](https://github.com/zhaoxinghua09-cell/medxpert-reg-connector) · [medxpert-skills](https://github.com/zhaoxinghua09-cell/medxpert-skills) · [agent-skills](https://github.com/zhaoxinghua09-cell/agent-skills) · [agent-memory-service](https://github.com/zhaoxinghua09-cell/agent-memory-service) · [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) | Product integrations: medical-device compliance tooling, agent skill packs, memory service, unified entry hub. |
 
-One umbrella, four layers — used consistently: **LGD Collaborative Governance Framework** (umbrella name; **XLGD** remains the X-distinction mark for LGD), **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella). All names are project identifiers only — **no entity or trademark registration filed**.
+One umbrella, four layers — used consistently: **LGD Collaborative Governance Framework** (umbrella name; **XLGD** remains the X-distinction mark for LGD), **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella).
+
+名称状态 (name status)  : "SynomosAI" / "MedXpert" — 未申请实体注册、未申请商标注册
+                        (not a registered legal entity; no trademark registered)
 
 ```mermaid
 graph LR
@@ -73,9 +76,17 @@ Evaluation is run by a separate account with read-only separation from the theor
 - LinkedIn: <https://www.linkedin.com/in/steven-zhao-9156a197>
 - X (Twitter): [@zhaoxing32035](https://x.com/zhaoxing32035)
 
-All account content is **All Rights Reserved** (text, methodology, theory terms, specs, examples, scripts). Code is released under MIT / Apache-2.0 / AGPL-3.0 per repo. Attribution-only citation is permitted with named source + link + rights holder *Zhao Xinghua / Steven Zhao·China*.
+© 2026 赵兴华 / Steven Zhao (ORCID 0009-0001-0512-1237). All rights reserved.
+理论署名 (attribution) : LGD（Lifecycle Governance Doctrine / 全程治理论）— SynomosAI initiative
+名称状态 (name status)  : "SynomosAI" / "MedXpert" — 未申请实体注册、未申请商标注册
+                        (not a registered legal entity; no trademark registered)
+生产参考部署 (production reference, self-reported) : MedXpert
+                    ← 非认证、非背书、非监管认可（not a certification or endorsement）
+贡献者 (contributors)   : LGD 理论组（ResearchGroup）— 理论起草与评审集体署名
 
-**Brand status:** MedXpert, SynomosAI, LGD, UIBC, Nomos, XLGD are project identifiers only — **no entity or trademark registration filed**. Their appearance is source identification, not a claim of legal-entity or trademark rights.
+All account text, methodology, theory terms, specifications and examples are All Rights Reserved.
+Code is released under the license stated in each repository (MIT / Apache-2.0 / AGPL-3.0).
+AI assistance: drafted with AI assistance from sources I read myself; the reading and the position are mine.
 
 ---
 
@@ -127,4 +138,9 @@ All account content is **All Rights Reserved** (text, methodology, theory terms,
 - 邮箱：zhaoxinghua09@gmail.com ｜ ORCID：0009-0001-0512-1237 ｜ 官网：<https://medxpert.cn>
 - LinkedIn：<https://www.linkedin.com/in/steven-zhao-9156a197> ｜ X：[@zhaoxing32035](https://x.com/zhaoxing32035)
 
-**权利宣告**：本账号全部内容保留所有权利；代码依各仓许可证（MIT/Apache-2.0/AGPL-3.0）使用。署名引用须标注权利人「赵兴华 / Steven Zhao·China」。MedXpert、SynomosAI、LGD、UIBC、XLGD 等仅为项目标识，**均未申请实体/商标注册**。
+© 2026 赵兴华 / Steven Zhao (ORCID 0009-0001-0512-1237). All rights reserved.
+理论署名 (attribution) : LGD（Lifecycle Governance Doctrine / 全程治理论）— SynomosAI initiative
+名称状态 (name status)  : "SynomosAI" / "MedXpert" — 未申请实体注册、未申请商标注册
+贡献者 (contributors)   : LGD 理论组（ResearchGroup）— 理论起草与评审集体署名
+
+本账号文本、方法论、理论术语、规范与示例保留所有权利；代码依各仓许可证（MIT / Apache-2.0 / AGPL-3.0）使用。AI 辅助声明：理论阅读与立场由本人负责。
