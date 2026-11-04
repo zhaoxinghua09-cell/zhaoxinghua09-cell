@@ -5,9 +5,9 @@
 ![ITU-T FG-TIDA](https://img.shields.io/badge/ITU--T%20FG--TIDA-contributor-0033A0)
 ![ORCID](https://img.shields.io/badge/ORCID-0009--0001--0512--1237-A6CE39?logo=orcid&logoColor=white)
 ![Zenodo](https://img.shields.io/badge/Zenodo-archived_releases-1331AB?logo=zenodo&logoColor=white)
-![Site](https://img.shields.io/badge/site-medxpert.cn-000000?logo=googlechrome&logoColor=white)
+![Site](https://img.shields.io/badge/site-lgd--hub%20portal-000000?logo=googlechrome&logoColor=white)
 ![LinkedIn](https://img.shields.io/badge/LinkedIn-steven--zhao--9156a197-0A66C2?logo=linkedin&logoColor=white)
-![X](https://img.shields.io/badge/X-%40zhaoxing32035-000000?logo=x&logoColor=white)
+![X](https://img.shields.io/badge/X-%40zhaoxing4100-000000?logo=x&logoColor=white)
 
 ![Profile views](https://komarev.com/ghpvc/?username=zhaoxinghua09-cell&color=0033A0)
 
@@ -17,7 +17,7 @@
 
 Work submitted to **[ITU-T FG-TIDA](https://www.itu.int/en/ITU-T/focusgroups/tida/Pages/Default.aspx)** (Trustworthy Identification for Autonomous Agents), written in an independent-expert capacity:
 
-- **[`silent-failure-catalog`](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** → submitted as a verifier-side challenge reference in [`FG-TIDA/use-cases` PR #23](https://github.com/FG-TIDA/use-cases/pull/23): a named catalog of **14 silent-failure modes** — validation that passes while nothing is checked — each with a runnable reproduction, a fix, and a negative control. Zenodo-archived ([concept record 23051637](https://zenodo.org/records/23051637), resolves to the latest version); canonical release tag per the repo's citation note.
+- **[`silent-failure-catalog`](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** → submitted as a verifier-side challenge reference in [`FG-TIDA/use-cases` PR #23](https://github.com/FG-TIDA/use-cases/pull/23): **15 named silent-failure patterns** on the catalog's main branch (the v0.1.3 release carries 14) — validation that passes while nothing is checked — each with a runnable reproduction, a fix, and a negative control. Zenodo-archived ([concept record 23051637](https://zenodo.org/records/23051637), resolves to the latest version); canonical release tag per the repo's citation note.
 - **[Theme #7 — verifier-side requirements and failure semantics](https://github.com/FG-TIDA/themes/issues/7)**: discussion contributions on what a relying party may verify offline, and how verdicts stay re-verifiable without making every party a verifier. The catalog is also referenced in [theme #6](https://github.com/FG-TIDA/themes/issues/6) (intent-based security policies).
 - **[`FG-TIDA/wg1-ra-aai` PR #2](https://github.com/FG-TIDA/wg1-ra-aai/pull/2)** — reference-architecture chapter 4: *offline re-verifiability* of agent attestation results, aligned with RFC 9334 (RATS) role separation.
 - Merged: [`FG-TIDA/use-cases` PR #18](https://github.com/FG-TIDA/use-cases/pull/18) — completing the submissions index.
@@ -28,9 +28,9 @@ Work submitted to **[ITU-T FG-TIDA](https://www.itu.int/en/ITU-T/focusgroups/tid
 |---|---|---|
 | **Theory** | [lgd-theory](https://github.com/zhaoxinghua09-cell/lgd-theory) · [xlgd](https://github.com/zhaoxinghua09-cell/xlgd) · [xcgs-manifesto](https://github.com/zhaoxinghua09-cell/xcgs-manifesto) | Machine-checkable lifecycle model: registry · evidence · gates. |
 | **Protocol** | [uibc-core](https://github.com/zhaoxinghua09-cell/uibc-core) · [uibc-competition](https://github.com/zhaoxinghua09-cell/uibc-competition) · [silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog) · [assayance](https://github.com/zhaoxinghua09-cell/assayance) | Executable evidence/registry/validator core, the UIBC-MEM benchmark, and the verifier-side silent-failure challenge reference. |
-| **Applications** | [medxpert-reg-kb](https://github.com/zhaoxinghua09-cell/medxpert-reg-kb) · [medxpert-reg-connector](https://github.com/zhaoxinghua09-cell/medxpert-reg-connector) · [medxpert-skills](https://github.com/zhaoxinghua09-cell/medxpert-skills) · [agent-skills](https://github.com/zhaoxinghua09-cell/agent-skills) · [agent-memory-service](https://github.com/zhaoxinghua09-cell/agent-memory-service) · [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) | Product integrations: medical-device compliance tooling, agent skill packs, memory service, unified entry hub. |
+| **Applications** | [agent-skills](https://github.com/zhaoxinghua09-cell/agent-skills) · [agent-memory-service](https://github.com/zhaoxinghua09-cell/agent-memory-service) · [lgd-hub](https://github.com/zhaoxinghua09-cell/lgd-hub) | Agent skill packs, memory service, unified entry hub. The MedXpert medical-device product line runs as a separate, parallel line — see the plain-language pointer below. |
 
-One umbrella, four layers — used consistently: **LGD Collaborative Governance Framework** (umbrella name; **XLGD** remains the X-distinction mark for LGD), **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella).
+One umbrella, used consistently: **LGD — Lifecycle Governance Doctrine** — **LGD** (theory), **UIBC** (executable protocol), **MedXpert** (medical-device compliance applications — parallel to, not inside, the umbrella); **XLGD** remains the X-distinction mark for LGD.
 
 名称状态 (name status)  : "SynomosAI" / "MedXpert" — 未申请实体注册、未申请商标注册
                         (not a registered legal entity; no trademark registered)
@@ -49,17 +49,7 @@ graph LR
 - 🏛 **Tracking FG-TIDA?** Watch this account — FG-TIDA submissions and follow-ups land here first.
 - 🌐 **Prefer plain language?** [medxpert.cn](https://medxpert.cn) — the medical-device compliance line, in prose.
 
-## 🔗 Three accounts, one pipeline
-
-This account is one of three that together form the full loop — theory, tooling, evidence:
-
-| Account | Role | One line |
-|---|---|---|
-| **[@zhaoxinghua09-cell](https://github.com/zhaoxinghua09-cell)** (this account) | Theory & standards — SSOT | *What is right:* lifecycle model, protocols, skill registry, governance specs. |
-| **[@stevenzhao07](https://github.com/stevenzhao07)** | Product & tooling | *How to use it:* MedXpert toolchain and agent skill packs. |
-| **[@LGD-Eval](https://github.com/LGD-Eval)** | Independent evaluation | *How to prove it:* neutral verifier — Evaluated / Audited / Verified, with re-runnable evidence. |
-
-Evaluation is run by a separate account with read-only separation from the theory and product accounts, so claims are assessed by an independent party — the physical basis of verifiable independence.
+Work here is run with a registry, receipts and a permission matrix — registered, evidenced, gated.
 
 ## 🤝 Get involved
 
@@ -72,9 +62,9 @@ Evaluation is run by a separate account with read-only separation from the theor
 
 - Email: zhaoxinghua09@gmail.com
 - ORCID: 0009-0001-0512-1237
-- Site: <https://medxpert.cn>
+- Site: <https://zhaoxinghua09-cell.github.io/lgd-hub/>
 - LinkedIn: <https://www.linkedin.com/in/steven-zhao-9156a197>
-- X (Twitter): [@zhaoxing32035](https://x.com/zhaoxing32035)
+- X (Twitter): [@zhaoxing4100](https://x.com/zhaoxing4100)
 
 © 2026 赵兴华 / Steven Zhao (ORCID 0009-0001-0512-1237). All rights reserved.
 理论署名 (attribution) : LGD（Lifecycle Governance Doctrine / 全程治理论）— SynomosAI initiative
@@ -102,30 +92,22 @@ AI assistance: drafted with AI assistance from sources I read myself; the readin
 
 以独立专家身份向 **[ITU-T FG-TIDA（可自治智能体可信识别焦点组）](https://www.itu.int/en/ITU-T/focusgroups/tida/Pages/Default.aspx)** 提交的工作：
 
-- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** —— 14 种"静默失败"模式的命名目录，每条含可运行复现、修法、反向对照。已作为验证方挑战参考实现提交（`FG-TIDA/use-cases` **[PR #23](https://github.com/FG-TIDA/use-cases/pull/23)**）；Zenodo 归档（概念记录 [23051637](https://zenodo.org/records/23051637)，解析到最新版本），规范引用 tag 以仓内引用注记为准。
+- **[silent-failure-catalog](https://github.com/zhaoxinghua09-cell/silent-failure-catalog)** —— main 分支上 15 种"静默失败"命名模式的目录（v0.1.3 发布版收录 14 种），每条含可运行复现、修法、反向对照。已作为验证方挑战参考实现提交（`FG-TIDA/use-cases` **[PR #23](https://github.com/FG-TIDA/use-cases/pull/23)**）；Zenodo 归档（概念记录 [23051637](https://zenodo.org/records/23051637)，解析到最新版本），规范引用 tag 以仓内引用注记为准。
 - **[主题 #7 验证方失败语义](https://github.com/FG-TIDA/themes/issues/7)** 的讨论贡献（依赖方可离线核验什么、判决如何保持可复验而不把每个人都变成验证者）；catalog 亦被 [主题 #6](https://github.com/FG-TIDA/themes/issues/6)（意图安全策略）引用；**[`wg1-ra-aai` PR #2](https://github.com/FG-TIDA/wg1-ra-aai/pull/2)** 参考架构第 4 章：离线可复验性（对齐 RFC 9334 角色分离）。
 - 已合并：[`use-cases` PR #18](https://github.com/FG-TIDA/use-cases/pull/18)（补全投稿索引）。
 
 ### 三层结构
 
-**理论层**（lgd-theory · xlgd · xcgs-manifesto）→ **协议层**（uibc-core · uibc-competition · silent-failure-catalog · assayance）→ **应用层**（medxpert 系列 · agent-skills · agent-memory-service · lgd-hub）。
+**理论层**（lgd-theory · xlgd · xcgs-manifesto）→ **协议层**（uibc-core · uibc-competition · silent-failure-catalog · assayance）→ **应用层**（agent-skills · agent-memory-service · lgd-hub）。MedXpert 医疗器械产品线为并行线，不在伞内。
 
 | 术语 | 层 | 含义 |
 |---|---|---|
-| **LGD 协同治理体系（伞名）** | 伞 | 对外总称：LGD Collaborative Governance Framework；XLGD 为 LGD 的区别符标识，标明来源 |
+| **LGD（Lifecycle Governance Doctrine / 全程治理论）** | 伞 | 对外总称；XLGD 为 LGD 的区别符标识，标明来源 |
 | **LGD** | 理论 | 全生命周期模型：凡自治之物，有籍·有证·有门禁 |
 | **UIBC** | 协议 | 可执行协议：registry / evidence / gates 参考实现 + 基准 |
 | **MedXpert** | 应用 | 医疗器械合规产品线——**与 XLGD 伞并行，不在伞内** |
 
-### 三角互链 · 三号分工
-
-| 账号 | 角色 | 一句话 |
-|---|---|---|
-| **[@zhaoxinghua09-cell](https://github.com/zhaoxinghua09-cell)**（本账号） | 理论 & 标准（SSOT） | 什么对：全生命周期模型、协议、技能注册表、治理规范 |
-| **[@stevenzhao07](https://github.com/stevenzhao07)** | 产品 & 工具 | 怎么用：MedXpert 工具链与 agent 技能包 |
-| **[@LGD-Eval](https://github.com/LGD-Eval)** | 独立评测 | 怎么证明：中立验证方——Evaluated / Audited / Verified，证据可复跑 |
-
-评测由独立账号承载，与理论号/产品号保持只读隔离——"被评的结论不由被评方自证"，即可验证独立性的物理基础。
+本账号的工作按有籍 · 有证 · 有门禁运行：有注册表、有回执、有权限矩阵。
 
 ### 参与方式
 
@@ -135,8 +117,8 @@ AI assistance: drafted with AI assistance from sources I read myself; the readin
 
 ### 联系
 
-- 邮箱：zhaoxinghua09@gmail.com ｜ ORCID：0009-0001-0512-1237 ｜ 官网：<https://medxpert.cn>
-- LinkedIn：<https://www.linkedin.com/in/steven-zhao-9156a197> ｜ X：[@zhaoxing32035](https://x.com/zhaoxing32035)
+- 邮箱：zhaoxinghua09@gmail.com ｜ ORCID：0009-0001-0512-1237 ｜ 官网：<https://zhaoxinghua09-cell.github.io/lgd-hub/>
+- LinkedIn：<https://www.linkedin.com/in/steven-zhao-9156a197> ｜ X：[@zhaoxing4100](https://x.com/zhaoxing4100)
 
 © 2026 赵兴华 / Steven Zhao (ORCID 0009-0001-0512-1237). All rights reserved.
 理论署名 (attribution) : LGD（Lifecycle Governance Doctrine / 全程治理论）— SynomosAI initiative
